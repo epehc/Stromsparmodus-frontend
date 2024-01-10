@@ -20,8 +20,8 @@
 		511CB2342B4EA8C8004874F7 /* EnergyUsageBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB2332B4EA8C8004874F7 /* EnergyUsageBarChartView.swift */; };
 		511CB2362B4EA975004874F7 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB2352B4EA975004874F7 /* DashboardView.swift */; };
 		511CB2382B4EAA71004874F7 /* EnergyUsageSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB2372B4EAA71004874F7 /* EnergyUsageSummaryView.swift */; };
-		511CB23A2B4EAA9D004874F7 /* PaymentSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB2392B4EAA9D004874F7 /* PaymentSummaryView.swift */; };
 		511CB23C2B4EAAC0004874F7 /* PaymentHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB23B2B4EAAC0004874F7 /* PaymentHistoryView.swift */; };
+		511CB2402B4EAC90004874F7 /* PaymentSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB23F2B4EAC90004874F7 /* PaymentSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +58,8 @@
 		511CB2332B4EA8C8004874F7 /* EnergyUsageBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyUsageBarChartView.swift; sourceTree = "<group>"; };
 		511CB2352B4EA975004874F7 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		511CB2372B4EAA71004874F7 /* EnergyUsageSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyUsageSummaryView.swift; sourceTree = "<group>"; };
-		511CB2392B4EAA9D004874F7 /* PaymentSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSummaryView.swift; sourceTree = "<group>"; };
 		511CB23B2B4EAAC0004874F7 /* PaymentHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryView.swift; sourceTree = "<group>"; };
+		511CB23F2B4EAC90004874F7 /* PaymentSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +120,8 @@
 				511CB2332B4EA8C8004874F7 /* EnergyUsageBarChartView.swift */,
 				511CB2352B4EA975004874F7 /* DashboardView.swift */,
 				511CB2372B4EAA71004874F7 /* EnergyUsageSummaryView.swift */,
-				511CB2392B4EAA9D004874F7 /* PaymentSummaryView.swift */,
 				511CB23B2B4EAAC0004874F7 /* PaymentHistoryView.swift */,
+				511CB23F2B4EAC90004874F7 /* PaymentSummaryView.swift */,
 			);
 			path = "Stromsparrmodus-frontend";
 			sourceTree = "<group>";
@@ -281,7 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				511CB23A2B4EAA9D004874F7 /* PaymentSummaryView.swift in Sources */,
 				511CB2062B4EA656004874F7 /* ContentView.swift in Sources */,
 				511CB2302B4EA889004874F7 /* AccountDetailsView.swift in Sources */,
 				511CB22E2B4EA85D004874F7 /* UserProfileView.swift in Sources */,
@@ -290,6 +289,7 @@
 				511CB2042B4EA656004874F7 /* Stromsparrmodus_frontendApp.swift in Sources */,
 				511CB2322B4EA89F004874F7 /* EnergyUsageView.swift in Sources */,
 				511CB2342B4EA8C8004874F7 /* EnergyUsageBarChartView.swift in Sources */,
+				511CB2402B4EAC90004874F7 /* PaymentSummaryView.swift in Sources */,
 				511CB2382B4EAA71004874F7 /* EnergyUsageSummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

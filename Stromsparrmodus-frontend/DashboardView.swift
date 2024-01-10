@@ -15,6 +15,8 @@ struct DashboardView: View {
         NavigationView {
             VStack {
                 HStack {
+                    Text("Summary")
+                        .font(.largeTitle)
                     Spacer()
                     UserProfileView()
                         .padding()
@@ -37,12 +39,5 @@ struct DashboardView: View {
             }
             .navigationBarTitle("Dashboard", displayMode: .inline)
         }
-    }
-}
-
-// Preview for SwiftUI canvas
-struct DashboardView_Previews: PreviewProvider {
-    static var previews: some View {
-        DashboardView()
     }
 }

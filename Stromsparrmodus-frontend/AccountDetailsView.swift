@@ -19,7 +19,6 @@ struct AccountDetailsView: View {
             // Add more details as needed
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.white)
         .cornerRadius(20)
     }
 }

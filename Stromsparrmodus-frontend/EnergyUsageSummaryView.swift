@@ -10,12 +10,26 @@ import SwiftUI
 
 struct EnergyUsageSummaryView: View {
     var body: some View {
-        // This view should be designed to match the summary appearance you want
-        Text("Usage Summary")
-            .frame(maxWidth: .infinity, minHeight: 50)
-            .background(Color.blue)
-            .foregroundColor(.white)
+            HStack {
+                Image(systemName: "bolt.horizontal.fill")
+                    .foregroundColor(.yellow)
+                    .imageScale(.large)
+                    .frame(width: 50)
+
+                VStack(alignment: .leading) {
+                    Text("Usage")
+                        .font(.headline)
+                    Text("Current Month: 123 kWh")
+                        .font(.subheadline)
+                }
+
+                Spacer()
+
+                Image(systemName: "chevron.right")
+                    .foregroundColor(.gray)
+            }
+            .padding()
+            .background(Color(UIColor.secondarySystemBackground))
             .cornerRadius(10)
-            .padding(8)
-    }
+        }
 }

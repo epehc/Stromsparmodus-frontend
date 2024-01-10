@@ -10,12 +10,27 @@ import SwiftUI
 
 struct PaymentSummaryView: View {
     var body: some View {
-        // This view should be designed to match the summary appearance you want
-        Text("Payments Summary")
-            .frame(maxWidth: .infinity, minHeight: 50)
-            .background(Color.green)
-            .foregroundColor(.white)
-            .cornerRadius(10)
-            .padding(8)
+        HStack {
+            Image(systemName: "creditcard.fill")
+                .foregroundColor(.green)
+                .imageScale(.large)
+                .frame(width: 50)
+
+            VStack(alignment: .leading) {
+                Text("Payments")
+                    .font(.headline)
+                Text("Last Payment: 01 Jan 2024")
+                    .font(.subheadline)
+            }
+
+            Spacer()
+
+            Image(systemName: "chevron.right")
+                .foregroundColor(.gray)
+        }
+        .padding()
+        .background(Color(UIColor.secondarySystemBackground))
+        .cornerRadius(10)
     }
 }
+
