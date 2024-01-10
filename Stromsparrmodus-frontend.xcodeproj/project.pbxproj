@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		511CB2042B4EA656004874F7 /* Stromsparrmodus_frontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB2032B4EA656004874F7 /* Stromsparrmodus_frontendApp.swift */; };
+		511CB2062B4EA656004874F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB2052B4EA656004874F7 /* ContentView.swift */; };
+		511CB2082B4EA659004874F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511CB2072B4EA659004874F7 /* Assets.xcassets */; };
+		511CB20B2B4EA659004874F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 511CB20A2B4EA659004874F7 /* Preview Assets.xcassets */; };
+		511CB2152B4EA659004874F7 /* Stromsparrmodus_frontendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB2142B4EA659004874F7 /* Stromsparrmodus_frontendTests.swift */; };
+		511CB21F2B4EA659004874F7 /* Stromsparrmodus_frontendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB21E2B4EA659004874F7 /* Stromsparrmodus_frontendUITests.swift */; };
+		511CB2212B4EA659004874F7 /* Stromsparrmodus_frontendUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CB2202B4EA659004874F7 /* Stromsparrmodus_frontendUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		511CB2112B4EA659004874F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 511CB1F82B4EA656004874F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 511CB1FF2B4EA656004874F7;
+			remoteInfo = "Stromsparrmodus-frontend";
+		};
+		511CB21B2B4EA659004874F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 511CB1F82B4EA656004874F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 511CB1FF2B4EA656004874F7;
+			remoteInfo = "Stromsparrmodus-frontend";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		511CB2002B4EA656004874F7 /* Stromsparrmodus-frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stromsparrmodus-frontend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		511CB2032B4EA656004874F7 /* Stromsparrmodus_frontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stromsparrmodus_frontendApp.swift; sourceTree = "<group>"; };
+		511CB2052B4EA656004874F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		511CB2072B4EA659004874F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		511CB20A2B4EA659004874F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		511CB2102B4EA659004874F7 /* Stromsparrmodus-frontendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stromsparrmodus-frontendTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		511CB2142B4EA659004874F7 /* Stromsparrmodus_frontendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stromsparrmodus_frontendTests.swift; sourceTree = "<group>"; };
+		511CB21A2B4EA659004874F7 /* Stromsparrmodus-frontendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stromsparrmodus-frontendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		511CB21E2B4EA659004874F7 /* Stromsparrmodus_frontendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stromsparrmodus_frontendUITests.swift; sourceTree = "<group>"; };
+		511CB2202B4EA659004874F7 /* Stromsparrmodus_frontendUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stromsparrmodus_frontendUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		511CB1FD2B4EA656004874F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511CB20D2B4EA659004874F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511CB2172B4EA659004874F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		511CB1F72B4EA656004874F7 = {
+			isa = PBXGroup;
+			children = (
+				511CB2022B4EA656004874F7 /* Stromsparrmodus-frontend */,
+				511CB2132B4EA659004874F7 /* Stromsparrmodus-frontendTests */,
+				511CB21D2B4EA659004874F7 /* Stromsparrmodus-frontendUITests */,
+				511CB2012B4EA656004874F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		511CB2012B4EA656004874F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				511CB2002B4EA656004874F7 /* Stromsparrmodus-frontend.app */,
+				511CB2102B4EA659004874F7 /* Stromsparrmodus-frontendTests.xctest */,
+				511CB21A2B4EA659004874F7 /* Stromsparrmodus-frontendUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		511CB2022B4EA656004874F7 /* Stromsparrmodus-frontend */ = {
+			isa = PBXGroup;
+			children = (
+				511CB2032B4EA656004874F7 /* Stromsparrmodus_frontendApp.swift */,
+				511CB2052B4EA656004874F7 /* ContentView.swift */,
+				511CB2072B4EA659004874F7 /* Assets.xcassets */,
+				511CB2092B4EA659004874F7 /* Preview Content */,
+			);
+			path = "Stromsparrmodus-frontend";
+			sourceTree = "<group>";
+		};
+		511CB2092B4EA659004874F7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				511CB20A2B4EA659004874F7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		511CB2132B4EA659004874F7 /* Stromsparrmodus-frontendTests */ = {
+			isa = PBXGroup;
+			children = (
+				511CB2142B4EA659004874F7 /* Stromsparrmodus_frontendTests.swift */,
+			);
+			path = "Stromsparrmodus-frontendTests";
+			sourceTree = "<group>";
+		};
+		511CB21D2B4EA659004874F7 /* Stromsparrmodus-frontendUITests */ = {
+			isa = PBXGroup;
+			children = (
+				511CB21E2B4EA659004874F7 /* Stromsparrmodus_frontendUITests.swift */,
+				511CB2202B4EA659004874F7 /* Stromsparrmodus_frontendUITestsLaunchTests.swift */,
+			);
+			path = "Stromsparrmodus-frontendUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		511CB1FF2B4EA656004874F7 /* Stromsparrmodus-frontend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 511CB2242B4EA659004874F7 /* Build configuration list for PBXNativeTarget "Stromsparrmodus-frontend" */;
+			buildPhases = (
+				511CB1FC2B4EA656004874F7 /* Sources */,
+				511CB1FD2B4EA656004874F7 /* Frameworks */,
+				511CB1FE2B4EA656004874F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stromsparrmodus-frontend";
+			productName = "Stromsparrmodus-frontend";
+			productReference = 511CB2002B4EA656004874F7 /* Stromsparrmodus-frontend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		511CB20F2B4EA659004874F7 /* Stromsparrmodus-frontendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 511CB2272B4EA659004874F7 /* Build configuration list for PBXNativeTarget "Stromsparrmodus-frontendTests" */;
+			buildPhases = (
+				511CB20C2B4EA659004874F7 /* Sources */,
+				511CB20D2B4EA659004874F7 /* Frameworks */,
+				511CB20E2B4EA659004874F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				511CB2122B4EA659004874F7 /* PBXTargetDependency */,
+			);
+			name = "Stromsparrmodus-frontendTests";
+			productName = "Stromsparrmodus-frontendTests";
+			productReference = 511CB2102B4EA659004874F7 /* Stromsparrmodus-frontendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		511CB2192B4EA659004874F7 /* Stromsparrmodus-frontendUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 511CB22A2B4EA659004874F7 /* Build configuration list for PBXNativeTarget "Stromsparrmodus-frontendUITests" */;
+			buildPhases = (
+				511CB2162B4EA659004874F7 /* Sources */,
+				511CB2172B4EA659004874F7 /* Frameworks */,
+				511CB2182B4EA659004874F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				511CB21C2B4EA659004874F7 /* PBXTargetDependency */,
+			);
+			name = "Stromsparrmodus-frontendUITests";
+			productName = "Stromsparrmodus-frontendUITests";
+			productReference = 511CB21A2B4EA659004874F7 /* Stromsparrmodus-frontendUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		511CB1F82B4EA656004874F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					511CB1FF2B4EA656004874F7 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					511CB20F2B4EA659004874F7 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 511CB1FF2B4EA656004874F7;
+					};
+					511CB2192B4EA659004874F7 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 511CB1FF2B4EA656004874F7;
+					};
+				};
+			};
+			buildConfigurationList = 511CB1FB2B4EA656004874F7 /* Build configuration list for PBXProject "Stromsparrmodus-frontend" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 511CB1F72B4EA656004874F7;
+			productRefGroup = 511CB2012B4EA656004874F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				511CB1FF2B4EA656004874F7 /* Stromsparrmodus-frontend */,
+				511CB20F2B4EA659004874F7 /* Stromsparrmodus-frontendTests */,
+				511CB2192B4EA659004874F7 /* Stromsparrmodus-frontendUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		511CB1FE2B4EA656004874F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511CB20B2B4EA659004874F7 /* Preview Assets.xcassets in Resources */,
+				511CB2082B4EA659004874F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511CB20E2B4EA659004874F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511CB2182B4EA659004874F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		511CB1FC2B4EA656004874F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511CB2062B4EA656004874F7 /* ContentView.swift in Sources */,
+				511CB2042B4EA656004874F7 /* Stromsparrmodus_frontendApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511CB20C2B4EA659004874F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511CB2152B4EA659004874F7 /* Stromsparrmodus_frontendTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511CB2162B4EA659004874F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				511CB2212B4EA659004874F7 /* Stromsparrmodus_frontendUITestsLaunchTests.swift in Sources */,
+				511CB21F2B4EA659004874F7 /* Stromsparrmodus_frontendUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		511CB2122B4EA659004874F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 511CB1FF2B4EA656004874F7 /* Stromsparrmodus-frontend */;
+			targetProxy = 511CB2112B4EA659004874F7 /* PBXContainerItemProxy */;
+		};
+		511CB21C2B4EA659004874F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 511CB1FF2B4EA656004874F7 /* Stromsparrmodus-frontend */;
+			targetProxy = 511CB21B2B4EA659004874F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		511CB2222B4EA659004874F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		511CB2232B4EA659004874F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		511CB2252B4EA659004874F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Stromsparrmodus-frontend/Preview Content\"";
+				DEVELOPMENT_TEAM = C9Z5K3343V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "projektstudium.Stromsparrmodus-frontend";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		511CB2262B4EA659004874F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Stromsparrmodus-frontend/Preview Content\"";
+				DEVELOPMENT_TEAM = C9Z5K3343V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "projektstudium.Stromsparrmodus-frontend";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		511CB2282B4EA659004874F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9Z5K3343V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "projektstudium.Stromsparrmodus-frontendTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stromsparrmodus-frontend.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stromsparrmodus-frontend";
+			};
+			name = Debug;
+		};
+		511CB2292B4EA659004874F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9Z5K3343V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "projektstudium.Stromsparrmodus-frontendTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stromsparrmodus-frontend.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stromsparrmodus-frontend";
+			};
+			name = Release;
+		};
+		511CB22B2B4EA659004874F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9Z5K3343V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "projektstudium.Stromsparrmodus-frontendUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stromsparrmodus-frontend";
+			};
+			name = Debug;
+		};
+		511CB22C2B4EA659004874F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C9Z5K3343V;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "projektstudium.Stromsparrmodus-frontendUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stromsparrmodus-frontend";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		511CB1FB2B4EA656004874F7 /* Build configuration list for PBXProject "Stromsparrmodus-frontend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				511CB2222B4EA659004874F7 /* Debug */,
+				511CB2232B4EA659004874F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		511CB2242B4EA659004874F7 /* Build configuration list for PBXNativeTarget "Stromsparrmodus-frontend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				511CB2252B4EA659004874F7 /* Debug */,
+				511CB2262B4EA659004874F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		511CB2272B4EA659004874F7 /* Build configuration list for PBXNativeTarget "Stromsparrmodus-frontendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				511CB2282B4EA659004874F7 /* Debug */,
+				511CB2292B4EA659004874F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		511CB22A2B4EA659004874F7 /* Build configuration list for PBXNativeTarget "Stromsparrmodus-frontendUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				511CB22B2B4EA659004874F7 /* Debug */,
+				511CB22C2B4EA659004874F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 511CB1F82B4EA656004874F7 /* Project object */;
+}
