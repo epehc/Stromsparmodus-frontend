@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//This is the overall Payments view
 struct PaymentsView: View {
    
     @State private var averageLastMonthUsage: Double?

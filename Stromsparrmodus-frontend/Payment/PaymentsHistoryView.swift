@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//To display the List of past payments
 struct PaymentsHistoryView: View {
     @State private var showPaymentEntry = false
     @ObservedObject var paymentDataStore: PaymentDataStore

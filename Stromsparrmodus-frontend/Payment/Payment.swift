@@ -7,6 +7,8 @@
 
 import Foundation
 
+//The structure of a Payment
+
 struct Payment: Codable, Identifiable {
     var id = UUID()
     var kWhValue: Double

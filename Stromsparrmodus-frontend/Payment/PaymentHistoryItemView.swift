@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//The Items to be displayed on the PaymentsHistory
 struct PaymentHistoryItemView: View {
     var payment: Payment
     @Binding var isExpanded: Bool

@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-
+//Some helpful functions to call on regarding payments
 class PaymentDataStore: ObservableObject {
     @Published var payments: [Payment] = []
     private let fileName = "payments.json"
@@ -27,14 +27,12 @@ class PaymentDataStore: ObservableObject {
             let decoder = JSONDecoder()
             if let loadedPayments = try? decoder.decode([Payment].self, from: data) {
                 self.payments = loadedPayments
-                print("Loaded payments: \(payments)")
             }
         }
     }
     
     func savePayment(_ payment: Payment) {
         payments.append(payment)
-        print("Added new payment: \(payment)")
         savePaymentsToFile()
     }
     
@@ -43,7 +41,6 @@ class PaymentDataStore: ObservableObject {
         if let encoded = try? encoder.encode(payments) {
             let fileURL = getDocumentsDirectory().appendingPathComponent(fileName)
             try? encoded.write(to: fileURL)
-            print("Saved payments to file.")
         }
     }
     

@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+
+// This is the summary to be displayed on the Dashboard
 struct PaymentSummaryView: View {
     @ObservedObject var paymentDataStore: PaymentDataStore
     @State private var latestPayment: Payment?

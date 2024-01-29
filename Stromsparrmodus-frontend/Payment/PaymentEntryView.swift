@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-
+//To log payment entries
 struct PaymentEntryView: View {
     @State private var kWhValue: String = ""
     @State private var amountPaid: String = ""

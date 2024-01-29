@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+//Displays the average of the past payments, the latest payment, and a graph to compare them
 struct PaymentsOverviewView: View {
     @ObservedObject var paymentDataStore: PaymentDataStore
     var averageLastThreeMonthsPayment: Double?
