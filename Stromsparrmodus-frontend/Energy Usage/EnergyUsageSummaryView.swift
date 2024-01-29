@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct EnergyUsageSummaryView: View {
+    @ObservedObject var paymentDataStore: PaymentDataStore
+    @State private var latestPayment: Payment?
     var body: some View {
             HStack {
                 Image(systemName: "bolt.horizontal.fill")
@@ -19,8 +21,14 @@ struct EnergyUsageSummaryView: View {
                 VStack(alignment: .leading) {
                     Text("Usage")
                         .font(.headline)
-                    Text("Current Month: 123 kWh")
-                        .font(.subheadline)
+                    if let latestPayment = latestPayment {
+                                    Text("Current Month: \(latestPayment.kWhValue, specifier: "%.2f") kWh")
+                                    .font(.subheadline)
+                                } else {
+                                    Text("No data for current month")
+                                    .font(.subheadline)
+                                }
+                        
                 }
 
                 Spacer()
@@ -31,5 +39,8 @@ struct EnergyUsageSummaryView: View {
             .padding()
             .background(Color(UIColor.secondarySystemBackground))
             .cornerRadius(10)
-        }
+            .onAppear{
+                latestPayment = paymentDataStore.getLatestPayment()
+            }
+    }
 }

@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var paymentDataStore = PaymentDataStore()
+
     var body: some View {
         TabView {
-            DashboardView()
+            DashboardView(paymentDataStore: paymentDataStore)
                 .tabItem {
                     Label("Dashboard", systemImage: "sun.max.fill")
                 }
@@ -18,7 +20,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Energy Usage", systemImage: "chart.bar")
                 }
-            PaymentHistoryView()
+            PaymentsView(paymentDataStore: paymentDataStore)
                 .tabItem{
                     Label("Payments", systemImage: "creditcard.fill")
                 }
@@ -26,8 +28,3 @@ struct ContentView: View {
     }
 }
 
-
-
-#Preview {
-    ContentView()
-}

@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct PaymentSummaryView: View {
+    @ObservedObject var paymentDataStore: PaymentDataStore
+    @State private var latestPayment: Payment?
     var body: some View {
         HStack {
             Image(systemName: "creditcard.fill")
@@ -19,8 +21,14 @@ struct PaymentSummaryView: View {
             VStack(alignment: .leading) {
                 Text("Payments")
                     .font(.headline)
-                Text("Last Payment: 01 Jan 2024")
-                    .font(.subheadline)
+                if let latestPayment = latestPayment {
+                                Text("Latest Payment: \(latestPayment.date, formatter: dateFormatter)")
+                                .font(.subheadline)
+                            } else {
+                                Text("No recent payments")
+                                .font(.subheadline)
+                            }
+                    
             }
 
             Spacer()
@@ -31,6 +39,14 @@ struct PaymentSummaryView: View {
         .padding()
         .background(Color(UIColor.secondarySystemBackground))
         .cornerRadius(10)
+        .onAppear{
+            latestPayment = paymentDataStore.getLatestPayment()
+        }
+    }
+    private var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter
     }
 }
 

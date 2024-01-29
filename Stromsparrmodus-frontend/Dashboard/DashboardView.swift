@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct DashboardView: View {
+    @ObservedObject var paymentDataStore: PaymentDataStore
+    @State private var latestPayment: Payment?
     @State private var isShowingAccountDetails = false
 
     var body: some View {
@@ -26,10 +28,10 @@ struct DashboardView: View {
                 }
                 // Placeholders for summary views that could be navigated to, if needed.
                 NavigationLink(destination: EnergyUsageView()) {
-                    EnergyUsageSummaryView()
+                    EnergyUsageSummaryView(paymentDataStore: PaymentDataStore())
                 }
-                NavigationLink(destination: PaymentHistoryView()) {
-                    PaymentSummaryView()
+                NavigationLink(destination: PaymentsView(paymentDataStore: paymentDataStore)) {
+                    PaymentSummaryView(paymentDataStore: PaymentDataStore())
                 }
                 Spacer()
             }
