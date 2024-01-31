@@ -11,8 +11,9 @@ import Combine
 //Some helpful functions to call on regarding payments
 class PaymentDataStore: ObservableObject {
     @Published var payments: [Payment] = []
-    private let fileName = "payments.json"
     
+    private let paymentsKey = "paymentsData"
+        
     init() {
         loadPayments()
     }
@@ -22,8 +23,7 @@ class PaymentDataStore: ObservableObject {
     }
     
     func loadPayments() {
-        let fileURL = getDocumentsDirectory().appendingPathComponent(fileName)
-        if let data = try? Data(contentsOf: fileURL) {
+        if let data = UserDefaults.standard.data(forKey: paymentsKey) {
             let decoder = JSONDecoder()
             if let loadedPayments = try? decoder.decode([Payment].self, from: data) {
                 self.payments = loadedPayments
@@ -31,37 +31,63 @@ class PaymentDataStore: ObservableObject {
         }
     }
     
-    func savePayment(_ payment: Payment) {
-        payments.append(payment)
-        savePaymentsToFile()
-    }
-    
-    private func savePaymentsToFile() {
+    func savePayments() {
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(payments) {
-            let fileURL = getDocumentsDirectory().appendingPathComponent(fileName)
-            try? encoded.write(to: fileURL)
+            UserDefaults.standard.set(encoded, forKey: paymentsKey)
         }
     }
     
-    private func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
+    func addPayment(_ newPayment: Payment) -> Bool {
+            // Check if the payment amount is zero or negative
+            guard newPayment.amountPaid > 0 else {
+                return false
+            }
+
+            // Check if the date is in the future
+            guard newPayment.date <= Date() else {
+                return false
+            }
+
+            let calendar = Calendar.current
+            let newPaymentMonth = calendar.startOfMonth(for: newPayment.date)
+
+            // Check if a payment for this month already exists
+            let existingPaymentForMonth = payments.contains {
+                calendar.isDate($0.date, equalTo: newPaymentMonth, toGranularity: .month)
+            }
+
+            if existingPaymentForMonth {
+                // A payment for this month already exists
+                return false
+            } else {
+                // Add new payment
+                payments.append(newPayment)
+                savePayments()
+                return true
+            }
+        }
+    
+    func deletePayment(_ payment: Payment) {
+        if let index = payments.firstIndex(where: { $0.id == payment.id }) {
+            payments.remove(at: index)
+            savePayments()
+        }
     }
     
     func calculateAveragePaymentForPastMonths() -> Double? {
-           let calendar = Calendar.current
-           let startOfCurrentMonth = calendar.startOfMonth(for: Date())
-
-           let pastPayments = payments.filter { $0.date < startOfCurrentMonth }
-           
-           guard !pastPayments.isEmpty else {
-               return nil
-           }
-
-           let total = pastPayments.reduce(0) { $0 + $1.amountPaid }
-           return total / Double(pastPayments.count)
-       }
+        let calendar = Calendar.current
+        let startOfCurrentMonth = calendar.startOfMonth(for: Date())
+        
+        let pastPayments = payments.filter { $0.date < startOfCurrentMonth }
+        
+        guard !pastPayments.isEmpty else {
+            return nil
+        }
+        
+        let total = pastPayments.reduce(0) { $0 + $1.amountPaid }
+        return total / Double(pastPayments.count)
+    }
     
     func calculateCurrentMonthPayment() -> Double? {
         let currentMonthPayments = payments.filter {
@@ -75,17 +101,12 @@ class PaymentDataStore: ObservableObject {
         return currentMonthPayments.reduce(0) { $0 + $1.amountPaid }
     }
     
-    func deletePayment(_ payment: Payment) {
-        if let index = payments.firstIndex(where: { $0.id == payment.id }) {
-            payments.remove(at: index)
-            savePaymentsToFile()
-        }
-    }
+    
 }
 
 extension Calendar {
     func startOfMonth(for date: Date) -> Date {
-        let components = dateComponents([.year, .month], from: date)
-        return self.date(from: components)!
-    }
+           let components = dateComponents([.year, .month], from: date)
+           return self.date(from: components)!
+       }
 }
